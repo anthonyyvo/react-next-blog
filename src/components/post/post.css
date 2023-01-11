@@ -1,0 +1,45 @@
+.post {
+  width: 385px;
+  margin: 10px;
+}
+
+.postImage {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.postDate {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 300;
+}
+.postCat {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgb(51, 165, 51);
+}
+.postTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.postExcerpt {
+  font-family: "Open Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: #555454;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

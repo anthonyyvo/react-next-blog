@@ -1,0 +1,8 @@
+.single {
+  display: flex;
+}
+
+.singePostImage {
+  width: 600px;
+  object-fit: cover;
+}

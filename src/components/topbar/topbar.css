@@ -1,0 +1,51 @@
+.topbar {
+  width: 80%;
+  margin: 0 auto;
+  position: sticky;
+  display: flex;
+}
+
+.topRight,
+.topLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+}
+
+.topCenter {
+  flex: 8;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.topIcon {
+  height: 30px;
+  width: 30px;
+  color: green;
+  font-size: 20px;
+}
+
+.topBar-list {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin: 0;
+}
+
+.topBar-item {
+  list-style: none;
+  margin-left: 20px;
+}
+.topBar-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.topBar-avatar {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}

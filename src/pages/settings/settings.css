@@ -1,0 +1,53 @@
+.settings {
+  display: flex;
+}
+.settingsContainer {
+  flex: 9;
+  padding: 30px;
+}
+.settingsTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.settingsTitle span:first-child {
+  font-size: 30px;
+  color: teal;
+}
+.settingsTitle span:last-child {
+  font-size: 14px;
+  color: coral;
+  cursor: pointer;
+}
+.settingImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.settingsForm {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.settingsForm label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.settingsForm input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(155, 153, 153);
+}
+
+.settingButton {
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 200px;
+  background-color: teal;
+  border-radius: 5px;
+  color: white;
+  align-self: center;
+}

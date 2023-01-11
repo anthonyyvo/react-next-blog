@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+}
+
+.headerImage {
+  width: 100%;
+  margin-top: 100px;
+  height: 400px;
+  object-fit: cover;
+}
+.headerTitles {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.headerSubTitle {
+  font-size: 2rem;
+}
+.headerTitle {
+  font-size: 5rem;
+}
