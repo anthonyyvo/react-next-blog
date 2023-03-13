@@ -1,16 +1,26 @@
 import React from "react";
 import "./post.css";
+import { Link } from "react-router-dom";
 import img1 from "../../assets/images/2.jpg.webp";
 
-const Post = () => {
+
+const Post = ({post}) => {
+const PF = "http://localhost:5000/images/" ;
   return (
     <div className="post">
-      <img src={img1} alt="" className="postImage" />
+      <img src={PF + post.photo} alt="" className="postImage" />
       <div className="postInfo">
         <span className="postDate">10 - 12 - 2022</span>
-        <span className="postTitle">My FIRST BLOG</span>
-
+        <Link className="link" to={`/post/${post._id}`}>
+        <span className="postTitle">
+        {post.title}
+        </span>
+        </Link>
         <div className="postCats">
+          {post.cat ? post.cat.map((c) => (
+            <span className="postCat">Music</span> 
+
+          )) : ''}
           <span className="postCat">Music</span>
           <span className="postCat">Music</span>
           <span className="postCat">Music</span>
@@ -19,19 +29,7 @@ const Post = () => {
         <hr />
         <div className="postExcerpt">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa at
-            doloremque esse in soluta nesciunt dolorem illum, odio cupiditate ab
-            unde eum. Deleniti, odit architecto! Dicta eius culpa cupiditate?
-            Beatae.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Culpa at doloremque esse in soluta nesciunt dolorem illum, odio
-            cupiditate ab unde eum. Deleniti, odit architecto! Dicta eius culpa
-            cupiditate? Beatae.Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Culpa at doloremque esse in soluta nesciunt
-            dolorem illum, odio cupiditate ab unde eum. Deleniti, odit
-            architecto! Dicta eius culpa cupiditate? Beatae.Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Culpa at doloremque esse in
-            soluta nesciunt dolorem illum, odio cupiditate ab unde eum.
-            Deleniti, odit architecto! Dicta eius culpa cupiditate? Beatae.
+            {post.desc}
           </p>
         </div>
       </div>

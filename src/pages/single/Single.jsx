@@ -3,13 +3,16 @@ import "./single.css";
 import Topbar from "../../components/topbar/Topbar";
 import SinglePost from "../../components/singlePost/SinglePost";
 import Sidebar from "../../components/sidebar/Sidebar";
+import { useLocation } from "react-router";
+
 
 const Single = () => {
+const location = useLocation();
+
   return (
     <>
-      <Topbar />
       <div className="single">
-        <SinglePost />
+        <SinglePost location={location} />
         <Sidebar />
       </div>
     </>

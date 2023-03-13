@@ -1,10 +1,17 @@
 import "./topbar.css";
-import React from "react";
+import React, { useContext } from "react";
 import bsAn from "../../assets/images/bs-vo-hoai-minh-an.jpeg";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 
 const Topbar = () => {
-  const user = true;
+  const PF = "http://localhost:5000/images/" ;
+
+  const {user, dispatch} = useContext(Context);
+  const handleLogOut = () => {
+    dispatch({type: "LOG_OUT"});
+
+  }
   return (
     <div className="topbar font-secondary">
       <div className="topLeft">
@@ -39,14 +46,19 @@ const Topbar = () => {
 
           {user && (
             <li className="topBar-item">
-              <Link to="/register">Log Out</Link>
+              <Link to="/register"
+                onClick={() => {handleLogOut()}}
+              >Log Out</Link>
             </li>
           )}
         </ul>
       </div>
       <div className="topRight">
         <div>
-          {user ? <img src={bsAn} alt="me" className="topBar-avatar" /> : ""}
+        <p>{user?.username || 'no author'}</p>
+        <Link to="/settings">
+        {user && <img src={ PF + user.profilePicture} alt="me" className="topBar-avatar" />}
+        </Link>
         </div>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>

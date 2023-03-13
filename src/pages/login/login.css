@@ -42,11 +42,18 @@
 }
 .loginButton {
   background-color: rgb(19, 141, 19);
-  color: white;
+  color: red;
+
   padding: 10px 30px;
   border-radius: 5px;
+  border: 1px solid red;
   align-self: center;
   cursor: pointer;
+  position: relative;
+}
+.loginButton:disabled {
+  background-color: aqua;
+  cursor:not-allowed;
 }
 .loginRegisterButton {
   margin-top: 20px;
@@ -58,4 +65,8 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+.registerLink {
+  color: red;
+  text-decoration: none;
 }

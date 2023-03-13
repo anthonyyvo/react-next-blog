@@ -48,3 +48,30 @@
   font-family: "Open Sans", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+.inputTitle {
+  border: 1px solid black;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+.inputDesc {
+  border: 1px solid black;
+  padding: 0 20px;
+  font-family: "Open Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    width: 100%;
+
+}
+.singlePostUpdateButton {
+  background-color: teal;
+  top: 60px;
+  position: relative;
+  top: 30px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+
+}
